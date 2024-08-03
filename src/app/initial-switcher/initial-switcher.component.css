@@ -1,0 +1,103 @@
+header {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+  overflow: hidden;
+}
+
+header h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+section {
+  --gap: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--gap);
+  height: calc(100% - 20rem);
+  padding: var(--gap);
+  overflow: hidden;
+}
+
+section > article {
+  cursor: pointer;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+
+  /* FONT */
+
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: #000000 1px 0 10px;
+}
+
+section > article > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.95;
+  transition: 0.3s ease-in-out;
+}
+
+section > article:hover > div {
+  transform: scale(1.05);
+}
+
+section > article > p {
+  text-align: center;
+  opacity: 1;
+  position: absolute;
+  z-index: 999;
+  width: 13rem;
+  left: calc(50% - calc(13rem / 2));
+}
+
+section > article:nth-child(1) > div {
+  background-image: url(../../assets/images/amigurumi.png);
+}
+
+section > article:nth-child(2) > div {
+  background-image: url(../../assets/images/pirograbado.jpg);
+}
+
+section > article:nth-child(3) > div {
+  background-image: url(../../assets/images/macrame.jpeg);
+}
+
+section > article:hover > div {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 920px) {
+  header {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  header h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  section {
+    flex-direction: column;
+    height: calc(100% - 15rem);
+  }
+}
