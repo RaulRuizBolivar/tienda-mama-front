@@ -1,0 +1,9 @@
+<article [routerLink]="[product.id]">
+  <div>
+    <img [src]="product.images[0].url" />
+  </div>
+  <h3>{{ product.name }}</h3>
+  <p>{{ product.description }}</p>
+  <p>Solo quedan {{ product.stock }}!!</p>
+  <h3>{{ product.price }}€</h3>
+</article>

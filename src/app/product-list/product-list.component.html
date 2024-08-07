@@ -1,5 +1,5 @@
 <section>
-  @for (product of products; track products) {
-  <article>{{ product }}</article>
+  @for (product of products; track product.id) {
+  <app-product-list-item [product]="product"></app-product-list-item>
   }
 </section>

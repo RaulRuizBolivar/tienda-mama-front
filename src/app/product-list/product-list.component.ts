@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Product } from '../classes/Product.class';
+import { Product } from '../interfaces/product.interface';
+import { ProductListItemComponent } from '../product-list-item/product-list-item.component';
 import { ProductsService } from '../services/products.service';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [],
+  imports: [ProductListItemComponent],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css',
 })
@@ -24,8 +25,8 @@ export class ProductListComponent {
     this.setProducts();
   }
 
-  async setProducts() {
-    this.productsService.getAll().subscribe((products: Product[]) => {
+  setProducts() {
+    this.productsService.getAll().subscribe((products) => {
       console.log(products);
       if (!products) return;
       this.products = products;

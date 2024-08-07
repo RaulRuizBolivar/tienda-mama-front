@@ -67,15 +67,15 @@ section > article > p {
 }
 
 section > article:nth-child(1) > div {
-  background-image: url(../../assets/images/amigurumi.png);
+  background-image: url(../../assets/img/amigurumi.png);
 }
 
 section > article:nth-child(2) > div {
-  background-image: url(../../assets/images/pirograbado.jpg);
+  background-image: url(../../assets/img/pirograbado.jpg);
 }
 
 section > article:nth-child(3) > div {
-  background-image: url(../../assets/images/macrame.jpeg);
+  background-image: url(../../assets/img/macrame.jpeg);
 }
 
 section > article:hover > div {
