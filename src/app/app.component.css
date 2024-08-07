@@ -1,6 +1,23 @@
-main{
-    height: 100vh;
-    width: 100vw;
-    overflow: auto;
-    background-color: #F2F2EC;
+header {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  user-select: none;
+}
+
+header > nav > ul {
+  list-style-type: none;
+}
+
+header > nav > ul > li {
+  cursor: pointer;
+}
+
+main {
+  height: 100vh;
+  /* Hay que ver como hacer la altura */
+  width: 100vw;
+  overflow: auto;
+  background-color: #f2f2ec;
 }
