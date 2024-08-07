@@ -1,10 +1,10 @@
 {
-  "peacock.color": "#9d88c2",
+  "peacock.color": "#dd0531",
   "workbench.colorCustomizations": {
-    "statusBar.background": "#9d88c2",
-    "statusBar.foreground": "#15202b",
-    "statusBarItem.hoverBackground": "#8166b1",
-    "statusBarItem.remoteBackground": "#9d88c2",
-    "statusBarItem.remoteForeground": "#15202b"
-  }
+    "statusBar.background": "#dd0531",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#fa1b49",
+    "statusBarItem.remoteBackground": "#dd0531",
+    "statusBarItem.remoteForeground": "#e7e7e7"
+}
 }
