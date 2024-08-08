@@ -4,6 +4,7 @@ header {
   align-items: center;
   padding: 1rem;
   user-select: none;
+  background-color: #f2f2ec;
 }
 
 header > nav > ul {
@@ -15,9 +16,9 @@ header > nav > ul > li {
 }
 
 main {
-  height: 100vh;
+  height: calc(100vh - 3rem);
   /* Hay que ver como hacer la altura */
-  width: 100vw;
+  width: 100%;
   overflow: auto;
   background-color: #f2f2ec;
 }
