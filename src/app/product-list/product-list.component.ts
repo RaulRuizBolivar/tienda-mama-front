@@ -5,11 +5,10 @@ import { ProductListItemComponent } from '../product-list-item/product-list-item
 import { ProductsService } from '../services/products.service';
 
 @Component({
-  selector: 'app-product-list',
-  standalone: true,
-  imports: [ProductListItemComponent],
-  templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.css',
+    selector: 'app-product-list',
+    imports: [ProductListItemComponent],
+    templateUrl: './product-list.component.html',
+    styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
   routeParam: string = '';
